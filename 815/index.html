@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>815 — A Time Loop Horror</title>
+    <meta name="description" content="A 2D retro horror game featuring time loops, branching narratives, and a dark family mystery.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="scanlines"></div>
+        <div id="ui-overlay">
+            <div id="objective-display"></div>
+            <div id="dialogue-box" class="hidden">
+                <div id="dialogue-portrait"></div>
+                <div id="dialogue-content">
+                    <div id="dialogue-name"></div>
+                    <div id="dialogue-text"></div>
+                </div>
+                <div id="dialogue-continue">▼</div>
+            </div>
+            <div id="choice-menu" class="hidden">
+                <div id="choice-title"></div>
+                <div id="choice-options"></div>
+            </div>
+            <div id="phone-display" class="hidden">
+                <div id="phone-frame">
+                    <div id="phone-header">📱 Messages</div>
+                    <div id="phone-message"></div>
+                </div>
+            </div>
+            <div id="minigame-overlay" class="hidden"></div>
+            <div id="inventory-display"></div>
+            <div id="fade-overlay"></div>
+            <div id="blood-overlay" class="hidden"></div>
+        </div>
+        <div id="title-screen">
+            <div id="title-content">
+                <h1 id="title-text">8:15</h1>
+                <div id="title-subtitle">A TIME LOOP HORROR</div>
+                <div id="title-prompt" class="blink">PRESS ENTER TO BEGIN</div>
+                <div id="title-info">
+                    <span>WASD / Arrow Keys — Move</span>
+                    <span>E / Space — Interact</span>
+                    <span>ESC — Menu</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/audio.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/engine.js"></script>
+    <script src="js/dialogue.js"></script>
+    <script src="js/minigames.js"></script>
+    <script src="js/story.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/scenes.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

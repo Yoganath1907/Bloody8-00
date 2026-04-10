@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloody 8:00 - Psychological Horror</title>
+    <script type="module" crossorigin src="/assets/index-84Po2X11.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CCcSaOCL.css">
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="loading" class="overlay">Loading Assets...</div>
+      
+      <div id="main-menu" class="overlay hidden">
+        <h1 class="glitter-text">BLOODY 8:00</h1>
+        <p class="menu-subtitle">EVERY SECOND IS A SIN</p>
+        <button id="start-btn" class="menu-btn">▶ PRESS START</button>
+        <p style="font-family:'VT323',monospace;color:#444;font-size:1rem;margin-top:20px;">CLICK or ENTER to advance • ESC to skip text</p>
+      </div>
+
+      <div id="scene-layer" class="layer"></div>
+      
+      <div id="character-layer" class="layer"></div>
+      
+      <div id="crt-overlay" class="layer crt-effect"></div>
+
+      <div id="ui-layer" class="layer">
+        <div id="dialogue-box" class="hidden">
+          <div id="speaker-name"></div>
+          <div id="dialogue-text"></div>
+        </div>
+
+        <div id="choices-container" class="hidden">
+          <!-- Choices injected here -->
+        </div>
+
+        <div id="minigame-container" class="hidden">
+          <!-- Typing game UI -->
+        </div>
+        
+        <div id="qte-container" class="hidden">
+          <!-- Final QTE UI -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
